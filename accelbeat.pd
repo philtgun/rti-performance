@@ -1,0 +1,18 @@
+#N canvas 254 182 551 408 16;
+#X obj 103 16 inlet;
+#X obj 215 138 - 9.8;
+#X obj 48 188 expr $f1*$f1 + $f2*$f2 + $f3*$f3;
+#X floatatom 231 260 5 0 0 0 - - -, f 5;
+#X obj 16 110 print;
+#X obj 90 106 unpack 1 1 1;
+#X obj 93 63 routeOSC /accxyz;
+#X obj 210 34 unpackOSC;
+#X connect 0 0 7 0;
+#X connect 1 0 2 2;
+#X connect 2 0 3 0;
+#X connect 5 0 2 0;
+#X connect 5 1 2 1;
+#X connect 5 2 1 0;
+#X connect 6 0 4 0;
+#X connect 6 0 5 0;
+#X connect 7 0 6 0;
