@@ -1,4 +1,0 @@
-#N canvas 480 184 720 424 16;
-#X obj 58 110 outlet;
-#X obj 58 68 udpreceive \$1;
-#X connect 1 0 0 0;
