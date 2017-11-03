@@ -1,0 +1,10 @@
+#N canvas 620 318 450 352 16;
+#X obj 72 37 inlet;
+#X obj 77 117 mrpeach/routeOSC /3/xy;
+#X obj 76 171 unpack 1 1;
+#X obj 60 229 outlet;
+#X obj 205 236 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
