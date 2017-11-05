@@ -1,4 +1,4 @@
-#N canvas 87 69 1236 672 16;
+#N canvas 67 58 1236 672 16;
 #X floatatom 99 177 5 0 0 0 - - -, f 5;
 #X floatatom 181 179 5 0 0 0 - - -, f 5;
 #X floatatom 256 179 5 0 0 0 - - -, f 5;
@@ -9,7 +9,7 @@
 #X msg 40 66 \; pd dsp \$1;
 #X obj 169 243 pad;
 #X obj 58 397 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 7348 1;
+-1 -1 8355 1;
 #X obj 70 543 dbtorms;
 #X obj 527 352 *~;
 #X text 374 5 kick;
@@ -58,6 +58,8 @@
 #X floatatom 355 284 5 0 0 0 - - -, f 5;
 #X obj 243 31 loadbang;
 #X obj 880 265 synth;
+#X obj 833 441 *~;
+#X floatatom 1069 260 5 0 0 0 - - -, f 5;
 #X connect 0 0 7 0;
 #X connect 1 0 7 1;
 #X connect 1 0 47 0;
@@ -91,7 +93,7 @@
 #X connect 20 0 28 0;
 #X connect 22 0 17 0;
 #X connect 22 1 18 0;
-#X connect 23 0 25 0;
+#X connect 23 0 54 0;
 #X connect 24 0 23 0;
 #X connect 25 0 3 0;
 #X connect 25 0 3 1;
@@ -118,6 +120,8 @@
 #X connect 41 3 27 1;
 #X connect 41 4 5 0;
 #X connect 41 5 48 0;
+#X connect 41 6 54 1;
+#X connect 41 6 55 0;
 #X connect 42 0 43 0;
 #X connect 42 0 46 1;
 #X connect 42 0 47 1;
@@ -134,4 +138,5 @@
 #X connect 50 0 42 0;
 #X connect 52 0 4 0;
 #X connect 53 0 10 0;
+#X connect 54 0 25 0;
 #X coords 0 0 1 1 85 60 0;
