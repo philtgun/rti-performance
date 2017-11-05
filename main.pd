@@ -10,7 +10,7 @@
 #X msg 40 66 \; pd dsp \$1;
 #X obj 173 221 pad;
 #X obj 80 304 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 10900 1;
+-1 -1 8500 1;
 #X obj 92 450 dbtorms;
 #X obj 535 430 *~;
 #X obj 560 62 controller 8002;
@@ -85,4 +85,5 @@
 #X connect 35 0 11 0;
 #X connect 36 0 11 0;
 #X connect 37 0 36 0;
+#X connect 38 0 32 0;
 #X coords 0 0 1 1 85 60 0;
