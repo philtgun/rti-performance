@@ -1,0 +1,21 @@
+#N canvas 90 216 837 506 16;
+#X obj 93 11 inlet;
+#X obj 291 161 outlet;
+#X obj 83 57 mrpeach/routeOSC /3;
+#X obj 729 57 print;
+#X obj 86 163 outlet;
+#X obj 186 162 outlet;
+#X obj 397 158 outlet;
+#X obj 490 160 outlet;
+#X obj 82 100 mrpeach/routeOSC /push3 /toggle3 /toggle2 /fader5 /toggle1
+/fader3;
+#X obj 578 161 outlet;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 8 0;
+#X connect 8 0 4 0;
+#X connect 8 1 5 0;
+#X connect 8 2 1 0;
+#X connect 8 3 6 0;
+#X connect 8 4 7 0;
+#X connect 8 5 9 0;
