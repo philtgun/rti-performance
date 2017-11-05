@@ -44,6 +44,8 @@
 #X obj 509 125 accel 15;
 #X obj 880 265 synth 1;
 #X obj 597 166 perc 7000 2 10 2500 0.27;
+#X obj 1001 123 triggers2;
+#X obj 1033 182 + 7;
 #X connect 0 0 7 0;
 #X connect 1 0 7 1;
 #X connect 1 0 28 0;
@@ -69,6 +71,7 @@
 #X connect 17 0 3 0;
 #X connect 18 0 3 1;
 #X connect 19 0 20 0;
+#X connect 19 0 41 0;
 #X connect 20 0 21 0;
 #X connect 20 0 29 0;
 #X connect 22 0 17 0;
@@ -92,4 +95,6 @@
 #X connect 38 0 33 0;
 #X connect 39 0 10 0;
 #X connect 40 0 10 0;
+#X connect 41 0 42 0;
+#X connect 42 0 29 0;
 #X coords 0 0 1 1 85 60 0;
