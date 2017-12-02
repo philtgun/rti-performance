@@ -1,10 +1,10 @@
-#N canvas 71 69 1236 672 16;
+#N canvas 75 69 1236 672 16;
 #X floatatom 99 177 5 0 0 0 - - -, f 5;
 #X floatatom 181 179 5 0 0 0 - - -, f 5;
 #X floatatom 256 179 5 0 0 0 - - -, f 5;
 #X obj 524 622 dac~;
-#X obj 169 80 leap;
-#X obj 70 16 tgl 32 0 empty power empty 17 7 0 10 -262144 -1 -1 1 1
+#X obj 204 93 leap;
+#X obj 70 16 tgl 32 0 empty power empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X msg 40 66 \; pd dsp \$1;
 #X obj 169 243 pad;
@@ -12,7 +12,7 @@
 -1 -1 0 1;
 #X obj 65 458 dbtorms;
 #X obj 527 352 *~;
-#X text 374 5 kick;
+#X text 374 21 kick;
 #X text 556 20 hat;
 #X text 892 23 lead synth;
 #X text 170 26 pad;
@@ -26,7 +26,7 @@
 #X floatatom 963 166 5 0 0 0 - - -, f 5;
 #X obj 396 450 freeverb~;
 #X obj 906 327 background;
-#X obj 967 275 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 967 275 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 584 497 *~;
 #X obj 724 121 accel 17;
@@ -56,7 +56,6 @@
 #X obj 16 140 loadbang;
 #X msg 30 205 0;
 #X floatatom 355 284 5 0 0 0 - - -, f 5;
-#X obj 243 31 loadbang;
 #X obj 774 269 synth;
 #X obj 1007 370 *~;
 #X obj 1142 287 s power;
@@ -64,6 +63,7 @@
 #X obj 287 219 r pad_f;
 #X obj 1040 290 s pad_f;
 #X obj 1048 254 s pad_p;
+#X obj 190 58 controller 8010;
 #X connect 0 0 7 0;
 #X connect 1 0 7 1;
 #X connect 1 0 47 0;
@@ -71,7 +71,6 @@
 #X connect 4 0 0 0;
 #X connect 4 1 1 0;
 #X connect 4 2 2 0;
-#X connect 5 0 4 0;
 #X connect 5 0 6 0;
 #X connect 7 0 44 0;
 #X connect 7 1 45 0;
@@ -97,13 +96,13 @@
 #X connect 20 0 28 0;
 #X connect 22 0 17 0;
 #X connect 22 1 18 0;
-#X connect 23 0 54 0;
+#X connect 23 0 53 0;
 #X connect 24 0 23 0;
 #X connect 25 0 3 0;
 #X connect 25 0 3 1;
 #X connect 26 0 33 0;
 #X connect 27 0 46 0;
-#X connect 28 0 53 0;
+#X connect 28 0 52 0;
 #X connect 29 0 36 0;
 #X connect 29 0 37 0;
 #X connect 30 0 35 0;
@@ -120,11 +119,11 @@
 #X connect 40 0 28 0;
 #X connect 41 0 15 0;
 #X connect 41 1 24 0;
-#X connect 41 2 59 0;
-#X connect 41 3 58 0;
-#X connect 41 4 55 0;
+#X connect 41 2 58 0;
+#X connect 41 3 57 0;
+#X connect 41 4 54 0;
 #X connect 41 5 48 0;
-#X connect 41 6 54 1;
+#X connect 41 6 53 1;
 #X connect 42 0 43 0;
 #X connect 42 0 46 1;
 #X connect 42 0 47 1;
@@ -136,11 +135,11 @@
 #X connect 46 0 25 0;
 #X connect 47 0 27 0;
 #X connect 47 0 51 0;
-#X connect 48 0 56 0;
+#X connect 48 0 55 0;
 #X connect 49 0 50 0;
 #X connect 50 0 42 0;
-#X connect 52 0 4 0;
-#X connect 53 0 10 0;
-#X connect 54 0 25 0;
-#X connect 57 0 27 1;
+#X connect 52 0 10 0;
+#X connect 53 0 25 0;
+#X connect 56 0 27 1;
+#X connect 59 0 4 0;
 #X coords 0 0 1 1 85 60 0;
