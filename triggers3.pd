@@ -5,19 +5,15 @@
 #X obj 729 57 print;
 #X obj 86 163 outlet;
 #X obj 186 162 outlet;
-#X obj 397 158 outlet;
-#X obj 490 160 outlet;
-#X obj 578 161 outlet;
-#X obj 82 100 mrpeach/routeOSC /push3 /toggle3 /toggle2 /fader4 /toggle1
-/fader3 /fader5;
-#X obj 689 165 outlet;
+#X obj 82 100 mrpeach/routeOSC /toggle1 /toggle2 /toggle3 /fader3 /fader4
+;
+#X obj 507 162 outlet;
+#X obj 402 163 outlet;
 #X connect 0 0 2 0;
 #X connect 2 0 3 0;
-#X connect 2 0 9 0;
-#X connect 9 0 4 0;
-#X connect 9 1 5 0;
-#X connect 9 2 1 0;
-#X connect 9 3 6 0;
-#X connect 9 4 7 0;
-#X connect 9 5 8 0;
-#X connect 9 6 10 0;
+#X connect 2 0 6 0;
+#X connect 6 0 4 0;
+#X connect 6 1 5 0;
+#X connect 6 2 1 0;
+#X connect 6 3 8 0;
+#X connect 6 4 7 0;

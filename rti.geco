@@ -67,7 +67,7 @@
                midicc="-1" offset="0" rest="0" mute="0" solo="0" linked="0"
                scale="1" invert="0" min="0" max="100" curve="0" attack="0" decay="0"
                resolution="0" midicc2="-1" latch="0"/>
-      <gesture openness="16" dexterity="2" type="256" enabled="1" midichannel="1"
+      <gesture openness="16" dexterity="2" type="256" enabled="1" midichannel="17"
                midicc="-1" offset="0" rest="0" mute="0" solo="0" linked="0"
                scale="1" invert="0" min="0" max="100" curve="0" attack="0" decay="0"
                resolution="0" midicc2="-1" latch="0"/>
@@ -116,7 +116,7 @@
                scale="1" invert="0" min="0" max="100" curve="0" attack="0" decay="0"
                resolution="0" midicc2="-1" latch="0"/>
       <gesture openness="16" dexterity="2" type="1024" enabled="1" midichannel="17"
-               midicc="-1" offset="0" rest="0" mute="0" solo="0" linked="0"
+               midicc="-1" offset="0" rest="-100" mute="0" solo="0" linked="0"
                scale="1" invert="0" min="0" max="100" curve="0" attack="0" decay="0"
                resolution="0" midicc2="-1" latch="0"/>
       <gesture openness="32" dexterity="1" type="1024" enabled="1" midichannel="1"
@@ -179,7 +179,7 @@
                midicc="-1" offset="0" rest="0" mute="0" solo="0" linked="0"
                scale="1" invert="0" min="0" max="100" curve="0" attack="0" decay="0"
                resolution="0" midicc2="-1" latch="0"/>
-      <gesture openness="16" dexterity="2" type="2048" enabled="1" midichannel="1"
+      <gesture openness="16" dexterity="2" type="2048" enabled="1" midichannel="17"
                midicc="-1" offset="0" rest="0" mute="0" solo="0" linked="0"
                scale="1" invert="0" min="0" max="100" curve="0" attack="0" decay="0"
                resolution="0" midicc2="-1" latch="0"/>
@@ -195,7 +195,7 @@
                midicc="-1" offset="0" rest="0" mute="0" solo="0" linked="0"
                scale="1" invert="0" min="0" max="100" curve="0" attack="0" decay="0"
                resolution="0" midicc2="-1" latch="0"/>
-      <gesture openness="16" dexterity="2" type="2304" enabled="1" midichannel="1"
+      <gesture openness="16" dexterity="2" type="2304" enabled="1" midichannel="17"
                midicc="-1" offset="0" rest="0" mute="0" solo="0" linked="0"
                scale="1" invert="0" min="0" max="100" curve="0" attack="0" decay="0"
                resolution="0" midicc2="-1" latch="0"/>
