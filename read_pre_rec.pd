@@ -1,0 +1,22 @@
+#N canvas 449 183 450 300 10;
+#X floatatom 46 204 5 0 0 0 - - -, f 5;
+#X obj 159 13 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 113 85 list split 2;
+#X obj 125 136 unpack f f;
+#X obj 265 194 del;
+#X obj 289 136 list append;
+#X obj 148 202 mtof;
+#X msg 92 51 67 500 72 2000 74 500 75 2000;
+#X floatatom 179 179 5 0 0 0 - - -, f 5;
+#X connect 1 0 7 0;
+#X connect 2 0 3 0;
+#X connect 2 1 5 1;
+#X connect 2 2 7 0;
+#X connect 3 0 0 0;
+#X connect 3 0 6 0;
+#X connect 3 1 4 0;
+#X connect 3 1 8 0;
+#X connect 4 0 5 0;
+#X connect 5 0 2 0;
+#X connect 7 0 2 0;
