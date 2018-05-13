@@ -1,4 +1,4 @@
-#N canvas 0 0 1440 877 16;
+#N canvas 0 0 1349 666 16;
 #X obj 139 419 outlet;
 #X obj 230 419 outlet;
 #X obj 323 420 outlet;
