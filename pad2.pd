@@ -1,3 +1,4 @@
+#N struct text float x float y text t;
 #N canvas 0 0 1349 666 16;
 #X obj 114 14 inlet;
 #X obj 101 237 phasor~;
@@ -32,22 +33,20 @@
 #X obj 101 51 expr 140*(1+pow(3 \, 2*$f1));
 #X obj 96 431 dac~;
 #X floatatom 222 43 5 0 0 0 - - -, f 5;
-#X floatatom 738 29 5 0 0 0 - - -, f 5;
-#X floatatom 1055 196 5 0 0 0 - - -, f 5;
-#X obj 1079 8 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 1135 238 mtof;
-#X msg 1134 12 67 72 74 75;
-#X obj 1102 129 list split 1;
-#X obj 1101 96 list append;
-#X floatatom 828 84 5 0 0 0 - - -, f 5;
-#X floatatom 815 219 5 0 0 0 - - -, f 5;
-#X obj 812 257 select 0;
-#X obj 820 170 expr $f1<0.6 & $f1>0.59;
-#X obj 928 14 sig~;
-#X obj 934 105 edge~;
-#X floatatom 906 136 5 0 0 0 - - -, f 5;
-#X obj 931 62 expr~ $v1>0.4 & $v1<0.5;
+#X floatatom 781 436 5 0 0 0 - - -, f 5;
+#X floatatom 1038 277 5 0 0 0 - - -, f 5;
+#X obj 920 133 bng 20 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 780 339 mtof;
+#X obj 944 212 list split 1;
+#X obj 999 117 list append;
+#X obj 747 9 sig~;
+#X obj 767 124 edge~;
+#X scalar text 820 302 \; \;;
+#X msg 1046 25 76 73 74 76 77 74 74 79 77 76 74 76 74 72 71 72 74 72
+76 69 76 73 74 76 77 79 77 77 74 74 79 77 76 74 76 74 72 71 72 74 72
+76 69;
+#X obj 750 57 expr~ $v1>0.35 & $v1<0.4;
 #X connect 0 0 30 0;
 #X connect 0 0 27 0;
 #X connect 0 0 28 0;
@@ -67,7 +66,6 @@
 #X connect 12 0 11 0;
 #X connect 13 0 12 1;
 #X connect 14 0 15 1;
-#X connect 14 0 40 0;
 #X connect 16 0 24 0;
 #X connect 17 0 25 0;
 #X connect 18 0 23 0;
@@ -77,23 +75,20 @@
 #X connect 23 0 22 1;
 #X connect 24 0 6 0;
 #X connect 25 0 24 1;
-#X connect 27 0 44 0;
+#X connect 27 0 39 0;
 #X connect 28 0 32 0;
 #X connect 29 0 12 2;
 #X connect 30 0 26 0;
 #X connect 30 0 2 0;
 #X connect 33 0 7 0;
-#X connect 35 0 39 0;
+#X connect 35 0 38 0;
 #X connect 36 0 33 0;
-#X connect 37 0 39 0;
-#X connect 38 0 34 0;
-#X connect 38 0 36 0;
-#X connect 38 1 39 1;
-#X connect 38 2 37 0;
-#X connect 39 0 38 0;
-#X connect 40 0 43 0;
-#X connect 41 0 42 0;
-#X connect 43 0 41 0;
-#X connect 44 0 47 0;
-#X connect 45 1 35 0;
-#X connect 47 0 45 0;
+#X connect 37 0 34 0;
+#X connect 37 0 36 0;
+#X connect 37 1 38 1;
+#X connect 37 2 42 0;
+#X connect 38 0 37 0;
+#X connect 39 0 43 0;
+#X connect 40 1 35 0;
+#X connect 42 0 38 0;
+#X connect 43 0 40 0;

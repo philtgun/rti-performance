@@ -1,0 +1,2 @@
+[0612/120212:ERROR:registration_protocol_win.cc(53)] CreateFile: The system cannot find the file specified. (0x2)
+[0612/120256:ERROR:registration_protocol_win.cc(53)] CreateFile: The system cannot find the file specified. (0x2)
